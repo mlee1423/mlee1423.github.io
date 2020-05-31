@@ -67,8 +67,8 @@ main {
 /* Profile Pic */
 #profile-image {
   margin-right:10px;
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 2px solid white;
   transition: all .5s;
@@ -130,7 +130,7 @@ main {
   border: 2px solid #F5F7FA;
   background: #4FC1E9;
   margin-top: 10px;
-  z-index: 9999
+  z-index: 1;
 }
  
 .timeline-content {
@@ -179,7 +179,37 @@ main {
   visibility: visible;
   opacity: 1;
 }
-  
+
+/*Modal*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Specific width based on mockups */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  overflow-y: hidden;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  /*background: rgba(0, 0, 0, 0.8);*/
+  line-height: normal;
+}
+
+.modal-header {
+	padding-bottom: 0px !important;
+	padding-right: 20px;
+ 	padding-left: 20px;
+ 	padding-top: 20px;
+}
+
+.modal-body{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px !important;
+  line-height: normal;
+}
+
 @media screen and (max-width: 768px) {
   .container:before {
      left: 8px;
