@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/vjsweather.css">
+
+    <title>@mlee1423 - Meghann Lee</title>
+  </head>
+  <body class="gradient-day" id="application-body">
+        <header>
+            <nav class="navbar" >
+                <a class="navbar-brand nav-link navigation-jelly" style="color: white;" target="_blank" rel="noopener noreferrer" href="https://github.com/mlee1423">
+                    Meghann Lee
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link navigation-jelly" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation-jelly" href="index.html#timeline-block">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigation-jelly" href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="portfolio.html"><span class="fa fa-arrow-left fa-lg" ></span></a>
+        </header>
+        <main>
+            <div class="container weather-app">
+                <h1 class="display-4 text-center text-white mb-5">Weather App</h1>
+                    <div class="location row">
+                        <h1 class="location-timezone"></h1>
+                        <canvas class="icon" width="128" height="128"></canvas>
+                    </div>
+                    <div class="temperature row">
+                            <div class="degree-section col">
+                                <h2 class="temperature-degree"></h2>
+                                <span>F</span>
+                            </div>
+                            <div class="temperature-description col" id="temperature-description"></div>
+                    </div>
+            </div>
+        </main>
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/vjsweather.js"></script>
+        <script src="/js/skycons.js"></script>
+    </body>
+</html>

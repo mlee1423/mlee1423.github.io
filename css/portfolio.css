@@ -1,0 +1,77 @@
+body {
+    background: #3e21e7;
+    background: -webkit-linear-gradient(to right, #3e21e7, #bb89eb);
+    background: linear-gradient(to right, #3e21e7, #bb89eb);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+  
+/* Navigation Bar*/
+.nav-link{
+    color: white;
+}
+  
+.nav-link:hover {
+    color: hsl(236, 32%, 26%);
+}
+  
+/* Jelly Animation on Navbar */
+.navigation-jelly {
+    z-index: 1;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+    
+.navigation-jelly:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+}
+    
+@keyframes jelly {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+       transform: scale(1.1, 0.9);
+    }
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
+  
+/* Profile Pic */
+#profile-image {
+    margin-right:10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all .5s;
+}
+  
+#profile-image:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+/*horizontal seperator*/
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid whitesmoke;
+  }
+
+
+  
+  
+  
+  

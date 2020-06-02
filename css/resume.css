@@ -136,7 +136,7 @@ main {
 .timeline-content {
   width: 95%;
   padding: 5px;
-  color: #DCDFE3;
+  color: white;
 }
  
 .timeline-content h3 {
@@ -148,15 +148,24 @@ main {
  
 .timeline-content span {
   font-size: 15px;
-  color: #DCDFE3;
+  color: white;
 }
  
 .timeline-content p {
   font-size: 14px;
   line-height: 1.5em;
   word-spacing: 1px;
-  color: #DCDFE3;
+  color: white;
 } 
+
+.eos-link {
+  color: #68688f;
+}
+
+.eos-link:hover {
+  color: #ffb5c5;
+  text-decoration: none;
+}
 
 /* Timeline Effects */
 /*content */
