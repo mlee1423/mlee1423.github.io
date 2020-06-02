@@ -1,23 +1,24 @@
 .intro {
-  background: hsl(167, 75%, 47%);
-  background: -webkit-linear-gradient(to right,hsl(167, 75%, 47%), #85cfde);
-  background: linear-gradient(to right, hsl(167, 75%, 47%), #85cfde);
+  background: #1ed2ab;
+  background: -webkit-linear-gradient(to right,#1ed2ab, #78cedf);
+  background: linear-gradient(to right, #1ed2ab, #78cedf);
   overflow-x: hidden;
   min-height: 100vh;
   padding: 100px 0;
+  /*old gradient #85cfde*/
 }
 
 header {
-  background: hsl(167, 75%, 47%);
-  background: -webkit-linear-gradient(to right,hsl(167, 75%, 47%), #85cfde);
-  background: linear-gradient(to right, hsl(167, 75%, 47%), #85cfde);
+  background: #1ed2ab;
+  background: -webkit-linear-gradient(to right,#1ed2ab, #78cedf);
+  background: linear-gradient(to right, #1ed2ab, #78cedf);
   overflow-x: hidden;
 }
 
 main {
   background: #03cafc;
-  background: -webkit-linear-gradient(to right, #03cafc, #85cfde);
-  background: linear-gradient(to right, #03cafc, #85cfde);
+  background: -webkit-linear-gradient(to right, #03cafc, #78cedf);
+  background: linear-gradient(to right, #03cafc, #78cedf);
   overflow-x: hidden;
   min-height: 100vh;
 }
@@ -28,7 +29,7 @@ main {
 }
 
 .nav-link:hover {
-  color: hsl(236, 32%, 26%);
+  color: #2d3058;
 }
 
 /* Jelly Animation on Navbar */
@@ -76,6 +77,10 @@ main {
 
 #profile-image:hover {
   transform: scale(1.2) rotate(360deg);
+}
+
+.btn-outline-light:hover{
+  color: #03cafc;
 }
 
 /* Timeline Clean Ver */
@@ -217,6 +222,11 @@ main {
   padding-left: 20px;
   padding-bottom: 0px !important;
   line-height: normal;
+}
+
+.modal li{
+  text-align: left;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {

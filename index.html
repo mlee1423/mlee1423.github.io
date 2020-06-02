@@ -80,12 +80,13 @@
                 </div>
             </div>
             <div class="container py-5">
-                <div class="row text-center text-white mb-5 ">
+                <div class="row text-center text-white mb-0">
                     <div class="col-lg-8 mx-auto ">
                         <h1 class="display-4">
                             Education and Experience
                         </h1>
-                        <p class="lead mb-0 ">Timeline Below</p>
+                        <p class="lead mb-4">Timeline Below</p>
+                        <a href="MLeeResume.pdf" class="btn btn-outline-light" download="Meghann Lee Resume.pdf">Download Resume Here <span class="fas fa-download"></span></a>
                     </div>
                 </div>
                     <div class="row">
@@ -106,7 +107,7 @@
                                         <h2 class="h5 mb-0">Accenture Federal Services</h2><span class="small text-gray">
                                         Apr 2017 - Oct 2018<i class="fa fa-clock-o mr-1"></i></i></span>
                                         <h6 class="text-small mt-2 font-weight-medium">System Developer Associate, San Antonio, TX</h6>
-                                        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#afsModal">
+                                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#afsModal">
                                             Quantified Version
                                           </button>
                                         <p class="text-small mt-2">Initially put into the standard System Developer bootcamp, Accenture Federal Services is where I learned most of my Web Application Development fundamentals. 
@@ -126,7 +127,7 @@
                                         <h2 class="h5 mb-0">JMP Solutions</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1">
                                         </i>Nov 2018 - Apr 2020</span>
                                         <h6 class="text-small mt-2 font-weight-medium">Controls Specialist, San Antonio, TX</h6>
-                                        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#jmpModal">
+                                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#jmpModal">
                                             Quantified Version
                                           </button>
                                         <p class="text-small mt-2 ">Merging my educational background and my previous web development experience, I was hired by JMP Solutions initially to create a web application that gave the maintenance team members at the Toyota Motor Manufactoring plant the ability to gather, search, and edit data provided by the Tundra and Tacoma Frame Alignment equipment PLCs.
@@ -139,20 +140,27 @@
                             </div>
                         </div>
                     </div>
+                <div>
+                    
+                </div>
             </div>
         </main>
         <!-- Modals -->
         <div class="modal fade" id="afsModal" tabindex="-1" role="dialog" aria-labelledby="afsModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="color:white;background: linear-gradient(to right, #03cafc, #5c94fd);">
                 <div class="modal-header" style="border-bottom: none;">
-                <h5 class="modal-title" id="afsModalLabel">Accenture Federal Services</h5>
+                <h4 class="modal-title" id="afsModalLabel">Accenture Federal Services - Quantified</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true" style="color:white;">&times;</span>
                 </button>
                 </div>
                 <div class="modal-body">
+                    <h5>System Developer Associate</h5>
+                    <span><i class="fa fa-clock-o mr-1"></i>Apr 2017 - Oct 2018
+                        <i class="fa fa-map-marker" style="padding-left: 140px; padding-right: 3px;"></i> San Antonio, TX</span>
                     <ul>
+                    </br>
                         <li>Revamped UI and app interface with mobile-friendly responsive design for customer-facing web
                             application with 20,000+ unique visitors per month
                         </li>
@@ -170,22 +178,26 @@
                     </ul>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
                   </div>
             </div>
             </div>
         </div>
         <div class="modal fade" id="jmpModal" tabindex="-1" role="dialog" aria-labelledby="jmpModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="color:white;background: linear-gradient(to right, #03cafc, #5c94fd);">
                 <div class="modal-header" style="border-bottom: none;">
-                <h5 class="modal-title" id="jmpModalLabel">JMP Solutions</h5>
+                <h4 class="modal-title" id="jmpModalLabel">JMP Solutions - Quantified</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true" style="color: white;">&times;</span>
                 </button>
                 </div>
                 <div class="modal-body">
+                    <h5>Controls Specialist</h5>
+                    <span><i class="fa fa-clock-o mr-1"></i>Nov 2018 - Apr 2020
+                        <i class="fa fa-map-marker" style="padding-left: 140px; padding-right: 3px;"></i> San Antonio, TX</span>
                     <ul>
+                    </br>
                         <li>Worked on various stages of automation and controls projects including PLC programming, HMI
                             design, and on-site commissioning at Toyota Motor Manufacturing TX
                         </li>
@@ -204,7 +216,7 @@
                     </ul>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
                   </div>
             </div>
             </div>
@@ -212,6 +224,7 @@
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/4d5f27df81.js" crossorigin="anonymous"></script>
         <script src="/js/timeline.js"></script>
     </body>
 </html>
