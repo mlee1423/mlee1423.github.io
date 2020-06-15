@@ -1,230 +1,52 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!-- meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="/css/landingpage.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/resume.css">
-
-    <title>@mlee1423 - Meghann Lee</title>
+    <title>👀 Meghann Lee</title>
   </head>
-  <body class="gradient">
+  <body>
         <header>
-            <nav class="navbar" >
-                <a class="navbar-brand nav-link navigation-jelly" style="color: white;" target="_blank" rel="noopener noreferrer" href="https://github.com/mlee1423">
-                    Meghann Lee
-                </a>
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link navigation-jelly" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navigation-jelly" href="#timeline-block">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navigation-jelly" href="portfolio.html">Portfolio</a>
-                    </li>
-                </ul>
+            <nav>
+                <div class="logo">
+                    <h4>The Nav</h4>
+                </div>
+                    <ul class="nav-links">
+                        <li class="navigation-jelly"><a href="#">Home</a></li>
+                        <li class="navigation-jelly"><a href="#">About</a></li>
+                        <li class="navigation-jelly"><a href="#">Portfolio</a></li>
+                        <li class="navigation-jelly"><a href="#">Contact</a></li>
+                        <li class="navigation-jelly"><a href="#">Blog</a></li>
+                    </ul>
+                <button class="hamburger hamburger--elastic" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </nav>
-            </header>
+        </header>
         <main>
-            <div class="intro">
-                <div class="row text-center text-white mb-5 ">
-                    <div class="col-lg-8 mx-auto ">
-                        <h1 class="display-4">
-                            Welcome to my Personal Website!
-                        </h1>
-                        <br>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="card card-inverse" style="background-color: transparent; border-color: transparent;">
-                                        <div class="card-block">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <img id="profile-image" src="/img/profile-pic.png">
-                                                    <br>
-                                                    <i class="fa fa-map-marker" style="padding-top: 10%; padding-bottom:10%;"></i> San Antonio, TX <br>
-                                                    <a href="https://github.com/mlee1423" style="color:white; padding-top: 4%; padding-right:12%;"><span class="fa fa-github fa-lg"></span></a>
-                                                    <a href="https://linkedin.com/in/meghannlee" style="color:white;padding-top: 4%; padding-right:10%;"><span class="fa fa-linkedin fa-lg"></span></a>
-                                                    <a href="#" style="color:white;padding-top: 6%; padding-right:4%;"><span class="fa fa-twitter fa-lg"></span></a>
-                                                </div> 
-                                                <div class="col-md-8 col-sm-8 text-left">
-                                                    <h2 class="card-title">Meghann Lee</h2>
-                                                    <p class="card-text">Web Developer </p>
-                                                    <p class="card-text"><strong>Skills: </strong> Build user interfaces and prototypes, Code and deploy applications in a cross-platform, cross-browser environment, Update current websites to meet modern web standards. </p>
-                                                    <p><strong>Frameworks: </strong>
-                                                    <span class="badge bg-info">Bootstrap</span>
-                                                    <span class="badge bg-info">React</span>
-                                                    <span class="badge bg-info">Angular</span>
-                                                    </p>
-                                                    <p><strong>Languages: </strong>
-                                                        <span class="badge bg-info">HTML</span>
-                                                        <span class="badge bg-info">CSS</span>
-                                                        <span class="badge bg-info">JavaScript</span>
-                                                        <span class="badge bg-info">SQL</span>
-                                                        <span class="badge bg-info">PHP</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
+            <article class="post">
+                <h2 class="heading rocksalt">hi there! i'm meghann.</h2>
+                <img class="landingpagepic"src="img/profile-pic.png" alt="profile picture">
+                <div >
+                    <p class="info-blurb"><img src="img/person-circle.svg"> frontend developer
+                    </br>
+                    <img class="blurb-spacing" src="img/location.svg"> san antonio, tx</p>
                 </div>
-            </div>
-            <div class="container py-5">
-                <div class="row text-center text-white mb-0">
-                    <div class="col-lg-8 mx-auto ">
-                        <h1 class="display-4">
-                            Education and Experience
-                        </h1>
-                        <p class="lead mb-4">Timeline Below</p>
-                        <a href="MLeeResume.pdf" class="btn btn-outline-light" download="Meghann Lee Resume.pdf">Download Resume Here <span class="fas fa-download"></span></a>
-                    </div>
-                </div>
-                    <div class="row">
-                        <div class="col-lg-9 mx-auto timeline-container" id="timeline-block">
-                            <!-- Timeline -->
-                            <div class="timeline-block timeline-block-right">
-                                <div class="marker"></div>
-                                    <div class="timeline-content">
-                                        <h2 class="h5 mb-0">The University of Texas at San Antonio</h2>
-                                        <span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Aug 2012 - Dec 2016</span>
-                                        <h6 class="text-small mt-2 font-weight-medium">Bachelor's of Science</h6>
-                                        <p class="text-small mt-2">Electrical Engineering <br/> Computer Engineering</p>
-                                    </div>
-                            </div>
-                            <div class="timeline-block timeline-block-left">
-                                <div class="marker"></div>
-                                    <div class="timeline-content">
-                                        <h2 class="h5 mb-0">Accenture Federal Services</h2><span class="small text-gray">
-                                        Apr 2017 - Oct 2018<i class="fa fa-clock-o mr-1"></i></i></span>
-                                        <h6 class="text-small mt-2 font-weight-medium">System Developer Associate, San Antonio, TX</h6>
-                                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#afsModal">
-                                            Quantified Version
-                                          </button>
-                                        <p class="text-small mt-2">Initially put into the standard System Developer bootcamp, Accenture Federal Services is where I learned most of my Web Application Development fundamentals. 
-                                            Following this bootcamp, I was moved into the development branch that maintains contracts exclusively with the IRS
-                                        </p>
-                                        <p class="text-small mt-2">My first AFS IRS project came quickly, a project team needed a 3rd team member to help merge the frontend and backend of their web application.
-                                            Following a few in-house interviews, I joined the team and was tasked with creating frontend functionality along with testing new backend functionality. During the duration of the project, I became familiar with the Bootstrap framework. Here is a link to the completed <a target="_blank" rel="noopener noreferrer" href="https://apps.irs.gov/app/eos/" class="eos-link">web application</a>
-                                        </p>
-                                        <p class="text-small mt-2">Upon the completion of this project, I was interviewed for an Operations & Maintenance team position that handled the Affordable Care Act website.
-                                            Upon joining the O&M team, my tasks were exclusively backend related, including but not limited to: server monitoring, certificate handling, and pushing package changes to the live site
-                                        </p>
-                                    </div>
-                            </div>
-                            <div class="timeline-block timeline-block-right">
-                                <div class="marker"></div>
-                                    <div class="timeline-content">
-                                        <h2 class="h5 mb-0">JMP Solutions</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1">
-                                        </i>Nov 2018 - Apr 2020</span>
-                                        <h6 class="text-small mt-2 font-weight-medium">Controls Specialist, San Antonio, TX</h6>
-                                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#jmpModal">
-                                            Quantified Version
-                                          </button>
-                                        <p class="text-small mt-2 ">Merging my educational background and my previous web development experience, I was hired by JMP Solutions initially to create a web application that gave the maintenance team members at the Toyota Motor Manufactoring plant the ability to gather, search, and edit data provided by the Tundra and Tacoma Frame Alignment equipment PLCs.
-                                            This webapp was the first of it's kind in the TMMTX factory, an experiment to validate the use of web applications in place of HMI templates. 
-                                        </p>
-                                        <p class="text-small mt-2 ">After the successful completion of the project using C#, PHP, and SQL for the backend, I was trained in Ladder Logic, the programming language exclusive to PLC systems. 
-                                            From then on, I brought my problem solving skills to a variety of projects, mainly focusing on increasing effenciency in tasks machines were currently performing, eventually working with RFID Tracking and Vision Systems.
-                                        </p>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                <div>
-                    
-                </div>
-            </div>
+                <p class="paragraph">currently i am:
+                    <span
+                       class="txt-rotate"
+                       data-period="1000"
+                       data-rotate='[ "building my portfolio.", "job hunting.", "creating projects in pure JS.", "making too much pasta... &#128557"]'></span>
+                </p>
+            </article>
         </main>
-        <!-- Modals -->
-        <div class="modal fade" id="afsModal" tabindex="-1" role="dialog" aria-labelledby="afsModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content" style="color:white;background: linear-gradient(to right, #03cafc, #5c94fd);">
-                <div class="modal-header" style="border-bottom: none;">
-                <h4 class="modal-title" id="afsModalLabel">Accenture Federal Services - Quantified</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" style="color:white;">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                    <h5>System Developer Associate</h5>
-                    <span><i class="fa fa-clock-o mr-1"></i>Apr 2017 - Oct 2018
-                        <i class="fa fa-map-marker" style="padding-left: 140px; padding-right: 3px;"></i> San Antonio, TX</span>
-                    <ul>
-                    </br>
-                        <li>Revamped UI and app interface with mobile-friendly responsive design for customer-facing web
-                            application with 20,000+ unique visitors per month
-                        </li>
-                        <li>Converted 15 static screens into 6 modern JSP pages to enable a user to search through the IRS database
-                        </li>
-                        <li>
-                            Improved user experience by replacing 15 pop-up windows with 10 mobile-responsive modal windows
-                        </li>
-                        <li>
-                            Created custom JSTL and Javascript components for internal framework
-                        </li>
-                        <li>
-                            Automated package deployments using XML which reduced final build time by 30%
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                  </div>
-            </div>
-            </div>
-        </div>
-        <div class="modal fade" id="jmpModal" tabindex="-1" role="dialog" aria-labelledby="jmpModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content" style="color:white;background: linear-gradient(to right, #03cafc, #5c94fd);">
-                <div class="modal-header" style="border-bottom: none;">
-                <h4 class="modal-title" id="jmpModalLabel">JMP Solutions - Quantified</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" style="color: white;">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                    <h5>Controls Specialist</h5>
-                    <span><i class="fa fa-clock-o mr-1"></i>Nov 2018 - Apr 2020
-                        <i class="fa fa-map-marker" style="padding-left: 140px; padding-right: 3px;"></i> San Antonio, TX</span>
-                    <ul>
-                    </br>
-                        <li>Worked on various stages of automation and controls projects including PLC programming, HMI
-                            design, and on-site commissioning at Toyota Motor Manufacturing TX
-                        </li>
-                        <li>Exercised Project Management skills by quoting, materials ordering, budgeting, and interfacing
-                            with customer
-                        </li>
-                        <li>
-                            Created operation manuals, controls narratives, and system layouts for customer as final documentation
-                        </li>
-                        <li>
-                            Performed troubleshooting to correct system faults and malfunctions
-                        </li>
-                        <li>
-                            Trained 2 junior team members on Toyopuc PLC/HMI concepts and execution
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                  </div>
-            </div>
-            </div>
-        </div>
-        <!-- Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-        <script src="https://kit.fontawesome.com/4d5f27df81.js" crossorigin="anonymous"></script>
-        <script src="/js/timeline.js"></script>
+        <!-- js -->
+        <script src="js/landingpage.js"></script>
     </body>
 </html>
