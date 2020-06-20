@@ -1,0 +1,290 @@
+@import url("/css/burger.css") screen and (min-width: 400px) and (max-width: 767px);
+@import url("/css/burger.css") screen and (min-width: 320px) and (max-width: 399px);
+
+/*Global Settings*/
+@-ms-viewport{
+    width: device-width;
+}
+@font-face {
+	font-family: "Rock Salt";
+	src: url("/fonts/RockSalt/RockSalt-Regular.ttf");
+}
+@font-face {
+	font-family: "Red Hat Display";
+	src: url("/fonts/RedHatDisplay/RedHatDisplay-Regular.ttf");
+}
+/*dotted outline on objects when clicked on mobile*/
+*:focus {
+    outline: 0 !important;
+}
+body {
+	background-color: #521614;
+	font-family: "Red Hat Display";
+	color: #EDF2F4;
+	margin: 0px;
+	overflow-x: hidden;
+}
+.rocksalt {
+	font-family: "Rock Salt";
+}
+
+/*Navigation Bar */
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 7vh;
+	background-color: #181E25;
+	padding-right: 5px;
+}
+.logo {
+	color:#B8BBBA;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
+	padding-left: 10px;
+}
+.nav-links{
+	display: flex;
+	background-color: #181E25;
+	justify-content: space-around;
+	width: 40%;
+	margin: 0px;
+}
+.nav-links li{
+	list-style: none;
+}
+.nav-links a { 
+	color: #AB2E29;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 18px;
+}
+.hamburger {
+	display: none;
+}
+
+/* Jelly Animation on Navbar */
+.navigation-jelly {
+	z-index: 1;
+	color: #AB2E29;
+	padding: 0.5em 1em;
+	outline: none;
+	border: none;
+	background-color: transparent;
+  }
+ .navigation-jelly:hover {
+	cursor: pointer;
+	animation: jelly 0.5s;
+  }
+  @keyframes jelly {
+	0%,
+	100% {
+	  transform: scale(1, 1);
+	}
+	25% {
+	  transform: scale(0.9, 1.1);
+	}
+	50% {
+	  transform: scale(1.1, 0.9);
+	}
+	75% {
+	  transform: scale(0.95, 1.05);
+	}
+}
+
+/*Main HTML*/
+
+/*about*/
+.about {
+	padding: 0.5rem 1rem;
+	margin: 0.5rem auto 1rem;
+	font-size: 28px;
+	overflow: hidden;
+}
+.about-header {
+	font-size: 2.5em;
+	line-height: 57px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.profile{
+    margin-left: 5%;
+}
+.profile-picture {
+	border-color: #EDF2F4;
+	border-radius: 150px;
+	border-style: solid;
+	width: 100px;
+	height: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.profile-text{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+/*Media Queries*/
+/*Ultra Wide*/
+@media (min-width: 2400px){
+}
+/*Large Screens*/
+@media (min-width: 1440px){
+}
+/*iPad*/
+@media (min-width: 768px) and (max-width: 950px){
+	.about {
+		padding: 1rem 2rem;
+		margin: 1rem auto 2rem;
+	}
+	.about-header{
+		padding-top: 10%;
+		font-size: 3rem;
+	}
+	nav{
+		min-height: 6vh;
+	}
+	.logo {
+		padding-top: 5px;
+		z-index: 1;
+	}
+	.nav-links {
+		width: 60%;
+		padding-right: 5px;
+	}
+	body {
+		overflow: hidden;
+	}
+	
+}
+/*iPhone Plus*/
+@media (min-width: 400px) and (max-width: 767px) {
+	.about {
+		padding: 1rem 1rem;
+		margin: 1rem auto 2rem;
+	}
+	.about-header {
+		padding-top: 5%;
+		font-size: 34px;
+	}
+	body {
+		overflow: hidden;
+	}
+	nav{
+		position: fixed;
+		flex-direction: row-reverse;
+		bottom: 0px;
+		width: 100%;
+	}
+	.logo {
+		padding-top: 5px;
+		padding-right: 10px;
+		z-index: 1;
+	}
+	.nav-links{
+		position: fixed;
+		left: 0px;
+		height: 45vh;
+		bottom: 5vh;
+		background-color: #181E25;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: left;
+		width: 100%;
+		transform: translateY(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.hamburger{
+		display: block;
+		padding-bottom: 10px;
+	}
+	.nav-active {
+		transform: translateX(0%);
+	}
+	@keyframes navLinkFade {
+		from{
+			opacity: 0;
+			transform: translateX(50px);
+		}
+		to{
+			opacity: 1;
+			transform: translateX(0px);
+		}
+	}
+}
+/*iPhone*/
+@media (min-width: 320px) and (max-width: 399px) {
+	.about {
+		padding: 0.5rem 1rem;
+		margin: 1rem auto 1rem;
+		font-size: 1.5rem;
+	}
+	.about-header {
+		padding-top: 10%;
+		font-size: 2rem;
+	}
+	body {
+		overflow: hidden;
+	}
+	nav{
+		position: fixed;
+		flex-direction: row-reverse;
+		bottom: 0px;
+		width: 100%;
+		max-height: 5vh;
+	}
+	.logo {
+		padding-top: 5px;
+		padding-right: 10px;
+		z-index: 1;
+	}
+	.nav-links{
+		position: fixed;
+		left: 0px;
+		height: 45vh;
+		bottom: 5vh;
+		background-color: #181E25;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: left;
+		width: 100%;
+		transform: translateY(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.hamburger{
+		display: block;
+		padding-bottom: 10px;
+	}
+	.nav-active {
+		transform: translateX(0%);
+	}
+	@keyframes navLinkFade {
+		from{
+			opacity: 0;
+			transform: translateX(50px);
+		}
+		to{
+			opacity: 1;
+			transform: translateX(0px);
+		}
+	}
+}
+
+
+

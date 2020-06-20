@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/vjsweather.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/code-filled.svg" style="margin: 0px; padding: 0px;">
+                </div>
+                    <ul class="nav-links">
+                        <li class="navigation-jelly"><a href="index.html">home</a></li>
+                        <li class="navigation-jelly"><a href="about.html">about</a></li>
+                        <li class="navigation-jelly"><a href="#">portfolio</a></li>
+                        <li class="navigation-jelly"><a href="#">contact</a></li>
+                        <li class="navigation-jelly"><a href="#">blog</a></li>
+                    </ul>
+                <button class="hamburger hamburger--elastic" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </nav>
+        </header>
+        <main>
+            <div class="card-container weather-app">
+                <div class="card">
+                    <div class="grid-weather">
+                        <img src="img/arrow-left-circle-fill.svg" alt="back to portfolio" class="back-arrow">
+                        <h1 class="weather-title">weather app</h1>
+                    </div>
+                    <div class="location">
+                        <h1 class="location-timezone"></h1>
+                        <canvas class="icon" width="128" height="128"></canvas>
+                    </div>
+                    <div class="temperature">
+                        <div class="degree-section">
+                            <h2 class="temperature-degree"></h2>
+                            <span>F</span>
+                        </div>
+                        <div class="temperature-description" id="temperature-description"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- js -->
+        <script src="js/vjsweather.js"></script>
+        <script src="js/skycons.js"></script>
+    </body>
+</html>

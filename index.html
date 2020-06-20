@@ -7,20 +7,20 @@
     <!-- css -->
     <link rel="stylesheet" href="/css/landingpage.css">
 
-    <title>👀 Meghann Lee</title>
+    <title>👀 meghann lee</title>
   </head>
   <body>
         <header>
             <nav>
                 <div class="logo">
-                    <img src="img/code-filled.svg" style="margin: 0px; padding: 0px;">
+                    <img src="img/icons/code-filled.svg" style="margin: 0px; padding: 0px;">
                 </div>
                     <ul class="nav-links">
-                        <li class="navigation-jelly"><a href="#">Home</a></li>
-                        <li class="navigation-jelly"><a href="#">About</a></li>
-                        <li class="navigation-jelly"><a href="#">Portfolio</a></li>
-                        <li class="navigation-jelly"><a href="#">Contact</a></li>
-                        <li class="navigation-jelly"><a href="#">Blog</a></li>
+                        <li class="navigation-jelly"><a href="index.html">home</a></li>
+                        <li class="navigation-jelly"><a href="#">about</a></li>
+                        <li class="navigation-jelly"><a href="#">portfolio</a></li>
+                        <li class="navigation-jelly"><a href="#contact">contact</a></li>
+                        <li class="navigation-jelly"><a href="#">blog</a></li>
                     </ul>
                 <button class="hamburger hamburger--elastic" type="button">
                     <span class="hamburger-box">
@@ -30,20 +30,83 @@
             </nav>
         </header>
         <main>
-            <article class="post">
-                <h2 class="heading rocksalt">hi there! i'm meghann.</h2>
-                <img class="landingpagepic"src="img/profile-pic.png" alt="profile picture">
+            <article class="landing">
+                <h2 class="landing-header rocksalt">hi there! i'm meghann.</h2>
+                <img class="profile-picture"src="img/colored-profile.png" alt="profile picture">
                 <div >
-                    <p class="info-blurb"><img src="img/person-circle.svg"> frontend developer
+                    <p class="profile-title"><img src="img/icons/person-circle.svg"> frontend developer
                     </br>
-                    <img class="blurb-spacing" src="img/location.svg"> san antonio, tx</p>
+                    <img class="profile-location" src="img/icons/location.svg"> san antonio, tx</p>
                 </div>
-                <p class="paragraph">currently i am:
-                    <span
-                       class="txt-rotate"
-                       data-period="1000"
-                       data-rotate='[ "building my portfolio.", "job hunting.", "creating projects in pure JS.", "making too much pasta... &#128557"]'></span>
+                <p class="currently-setup">currently i am: </p>
+                <p class="typing-text">
+                    <span class="txt-rotate" data-period="1500"
+                    data-rotate='[ "building my personal portfolio.", "creating projects in Vanilla JS.", "making too much pasta... &#128557"]'>
+                    </span>
                 </p>
+            </article>
+            <article class="salespitch">
+                <h1 class="salespitch-header">what i can do for you</h1>
+                <div>
+                    <ul class="skill-bullets">
+                        <li>build user interfaces and prototypes</li>
+                        <li>code and deploy applications in a cross-platform environment</li>
+                        <li>update current websites to meet modern web standards</li>
+                        <li>ensure client satisfaction</li>
+                        <li>combine the art of design with the principles of programming to produce </li>
+                    </ul>
+                </div>
+                <h1 class="salespitch-header">current skill set</h1>
+                <div class="skillset">
+                    <img src="img/skillset/bootstrap.svg">
+                    <img src="img/skillset/css3.svg">
+                    <img src="img/skillset/html5.svg">
+                    <img src="img/skillset/javascript.svg">
+                    <img src="img/skillset/microsoftsqlserver.svg">
+                    <img src="img/skillset/php.svg">
+                </div>
+            </article>
+            <article class="projects">
+                <h1 class="projects-header">personal projects</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <a href="#">
+                        <img src="/img/project-cards/undraw_weather_d9t2.svg" alt="forcast filler" class="card-img">
+                        <div class="projects-container">
+                            <div class="title-label">
+                                <h3>weather app</h3>
+                                <span class="label javascript">vanilla js</span>
+                            </div>
+                            <p>using climacell's weather api 
+                            a clean display of your current weather condition is presented.</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="contact" id="contact">
+                <h1 class="contact-header">contact</h1>
+                <div class="contact-icons">
+                    <img src="/img/icons/linkedin-rect.svg">
+                    <img src="/img/icons/github.svg">
+                    <img src="/img/icons/circletwitter.svg">
+                </div>
+                <p>give me a shout using the form below</p>
+                <div class="contact-container">
+                    <form name="contact" method="POST" netlify>
+                        <label for="name">name</label>
+                        <input type="text" id="name" name="name" placeholder="sherlock holmes">
+    
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" placeholder="s.h.211b@bakerstreet.net">
+
+                        <label for="message">comment</label>
+                        <textarea id="message" name="message" placeholder="my name is sherlock holmes. it is my business to know what other people do not know." style="height:200px"></textarea>
+                        <div class="submit-btn">
+                        <button type="submit" value="Submit">send</button>
+                        </div>
+                    </form>
+                  </div> 
             </article>
         </main>
         <!-- js -->
