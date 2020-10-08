@@ -55,7 +55,7 @@ nav{
 	list-style: none;
 }
 .nav-links a { 
-	color: #AB2E29;
+	color: #942824;
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-size: 18px;
@@ -67,7 +67,7 @@ nav{
 /* Jelly Animation on Navbar */
 .navigation-jelly {
 	z-index: 1;
-	color: #AB2E29;
+	color: #942824;
 	padding: 0.5em 1em;
 	outline: none;
 	border: none;
@@ -142,7 +142,7 @@ nav{
 	margin-top: 12%;
 }
 .typing-text{
-	color: #AB2E29;
+	color: #942824;
 	padding-left: 26%;
 	margin-top: 0px;
 }

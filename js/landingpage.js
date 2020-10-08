@@ -4,11 +4,11 @@ const navSlide = () => {
     const navLinks = document.querySelectorAll('.nav-links li');
 
     burger.addEventListener('click', ()=>{
-        //Toggle Nav
+        //toggle nav
         nav.classList.toggle('nav-active');
         burger.classList.toggle("is-active");
 
-        //Animate Links
+        //animate links
         navLinks.forEach((link, index)=>{
             if(link.style.animation){
                 link.style.animation = '';
@@ -73,7 +73,7 @@ const textCarousel = () =>{
             new TxtRotate(elements[i], JSON.parse(toRotate), period);
           }
         }
-        // INJECT CSS
+        // inject css
         var css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #F3F5F5 }";

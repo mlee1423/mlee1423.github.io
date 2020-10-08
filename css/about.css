@@ -13,6 +13,10 @@
 	font-family: "Red Hat Display";
 	src: url("/fonts/RedHatDisplay/RedHatDisplay-Regular.ttf");
 }
+@font-face {
+	font-family: "Source Code Pro";
+	src: url("/fonts/SourceCodePro/SourceCodePro-Regular.ttf");
+}
 /*dotted outline on objects when clicked on mobile*/
 *:focus {
     outline: 0 !important;
@@ -72,12 +76,12 @@ nav{
 	outline: none;
 	border: none;
 	background-color: transparent;
-  }
+}
  .navigation-jelly:hover {
 	cursor: pointer;
 	animation: jelly 0.5s;
-  }
-  @keyframes jelly {
+}
+@keyframes jelly {
 	0%,
 	100% {
 	  transform: scale(1, 1);
@@ -113,7 +117,7 @@ nav{
 .about-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 .profile{
     margin-left: 5%;
@@ -129,11 +133,34 @@ nav{
     margin-left: auto;
 }
 .profile-text{
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: justify;
+	margin-left: 8em;
+	text-align: left;
+	font-family: "Source Code Pro";
+	font-size: small;
+	border-style: solid;
+	border-color: #EDF2F4;
 }
-
+.terminal{
+	background-color: #181E25;
+	width: 760px;
+}
+.userinputtest{
+	background-color: #181E25;
+	caret-color: #EDF2F4;
+	border-style: hidden;
+	color: #EDF2F4;
+	font-family: "Source Code Pro";
+}
+.underscore{
+	min-height: 400px;
+	max-height: 560px;
+	overflow-y: scroll;
+}
+.hcheck{
+	min-height: 400px;
+	max-height: 560px;
+	overflow-y: scroll;
+}
 /*Media Queries*/
 /*Ultra Wide*/
 @media (min-width: 2400px){
