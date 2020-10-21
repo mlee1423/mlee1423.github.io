@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/img/colored-profile.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/vjsweather.css">
@@ -12,13 +13,13 @@
         <header>
             <nav>
                 <div class="logo">
-                    <img src="img/code-filled.svg" style="margin: 0px; padding: 0px;">
+                    <img src="img/icons/code-filled.svg" style="margin: 0px; padding: 0px;">
                 </div>
                     <ul class="nav-links">
                         <li class="navigation-jelly"><a href="index.html">home</a></li>
                         <li class="navigation-jelly"><a href="about.html">about</a></li>
-                        <li class="navigation-jelly"><a href="#">portfolio</a></li>
-                        <li class="navigation-jelly"><a href="#">contact</a></li>
+                        <li class="navigation-jelly"><a href="index.html/#projects">portfolio</a></li>
+                        <li class="navigation-jelly"><a href="index.html/#contact">contact</a></li>
                         <li class="navigation-jelly"><a href="#">blog</a></li>
                     </ul>
                 <button class="hamburger hamburger--elastic" type="button">
@@ -29,22 +30,55 @@
             </nav>
         </header>
         <main>
-            <div class="card-container weather-app">
-                <div class="card">
-                    <div class="grid-weather">
-                        <img src="img/arrow-left-circle-fill.svg" alt="back to portfolio" class="back-arrow">
-                        <h1 class="weather-title">weather app</h1>
-                    </div>
-                    <div class="location">
-                        <h1 class="location-timezone"></h1>
-                        <canvas class="icon" width="128" height="128"></canvas>
-                    </div>
-                    <div class="temperature">
-                        <div class="degree-section">
-                            <h2 class="temperature-degree"></h2>
-                            <span>F</span>
+            <h1 class="weather-title">today's forecast</h1>
+            <div class="weather-container">
+                <div class="card-container weather-app">
+                    <div class="weather-card">
+                        <div class="location">
+                            <img class="profile-location" src="img/weather/location-weather.svg" alt="location icon">
+                            <div class="location-timezone"></div>
                         </div>
-                        <div class="temperature-description" id="temperature-description"></div>
+                        <div class="temperature">
+                            <div class="weather-icon-desc">
+                                <canvas class="icon" width="160" height="160"></canvas>
+                                <div class="temperature-description" id="temperature-description"></div>
+                            </div>
+                            <div class="degree-section">
+                                <div class="temperature-degree"></div>
+                                <div class="feelslike-value"></div>
+                                <div class="humid-prec">
+                                    <div class="humid-value"></div>
+                                    <div class="precip-value"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="hc-values">
+                        <div class="aqi-card">
+                            <div class="grid-aqi">
+                                <div class="aqi-classification">
+                                    <img class="aqi-circle" src="img/weather/aqi/aqi-orange.svg" alt="air quality index image">
+                                    <div class="aqi-value"></div>
+                                </div>
+                                <div class="aqi-desc">
+                                    <div class="aqi-hc"></div>
+                                    <div class="aqi-detailed"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sun-card">
+                            <div class="grid-sun">
+                                <div class="sunrise-desc">
+                                    <img class="sunrise-symbol" src="img/weather/sunrise.svg" alt="sunrise image">
+                                    <div class="sunrise-value"></div>
+                                </div>
+                                <div class="sunset-desc">
+                                    <img class="sunset-symbol" src="img/weather/sunset.svg" alt="sunset image">
+                                    <div class="sunset-value"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

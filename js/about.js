@@ -42,7 +42,7 @@ const jsTerminal = (ev) => {
     let hcheck = document.getElementById('underscore').scrollHeight.value;
     let yscroll = document.getElementById('profile-text');
     
-    if (hcheck >=800){
+    if (hcheck >=400){
         yscroll.classList.add("hcheck");
     }
 }

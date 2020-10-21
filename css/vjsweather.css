@@ -13,16 +13,21 @@
 	font-family: "Red Hat Display";
 	src: url("/fonts/RedHatDisplay/RedHatDisplay-Regular.ttf");
 }
+@font-face {
+	font-family: "Quicksand";
+	src: url("/fonts/Quicksand/Quicksand-Regular.ttf");
+}
+
 /*dotted outline on objects when clicked on mobile*/
 *:focus {
     outline: 0 !important;
 }
 body {
-	background-color: #384656;
+	background-color: #30334A;
 	font-family: "Red Hat Display";
 	color: #F2F6F7;
 	margin: 0px;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 .rocksalt {
 	font-family: "Rock Salt";
@@ -55,7 +60,7 @@ nav{
 	list-style: none;
 }
 .nav-links a { 
-	color: #AB2E29;
+	color: #59c3d3;
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-size: 18px;
@@ -67,7 +72,7 @@ nav{
 /* Jelly Animation on Navbar */
 .navigation-jelly {
 	z-index: 1;
-	color: #AB2E29;
+	color: #59c3d3;
 	padding: 0.5em 1em;
 	outline: none;
 	border: none;
@@ -98,25 +103,154 @@ nav{
 .card-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
 }
-.card{
+/* Weather Card */
+.weather-title{
+	color:  #EDF2F4;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 3%;
+}
+.weather-card{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 5px;
-    background-color: #089B96;
-    width: 50%;
+	background-color: #EDF2F4;
+	min-width: 50vw;
+	min-height: 34vh;
+	font-family: "Quicksand";
+	color: #000000;
+	justify-content: space-around;
+}
+.weather-icon-desc{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 .grid-weather{
     display: grid;
-    grid-auto-flow: row;
+	grid-auto-flow: column;
 }
+.location{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-top: 3%;
+	margin-left: 5%;
+	font-size: 3em;
+}
+.location img{
+	margin-top: 2%;
+}
+.location div{
+	margin-left: 5%;
+}
+.temperature{
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-content: flex-start;
+	margin-top: 3%;
+	margin-left: 3%;
+}
+.temperature-degree{
+	font-size: 4em;
+}
+.temperature-description{
+	font-size: 2em;
+	margin-left: 3%;
+}
+.degree-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 30%;
+
+}
+.humid-prec{
+	font-size: 1em;
+}
+.feelslike-value{
+	color: #5C5C5C;
+	font-size: x-large;
+	margin-bottom: 3%;
+}
+/* AQI Card */
+.aqi-card{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+	background-color: #EDF2F4;
+	min-height: 15vh;
+	min-width: 40vw;
+	font-family: "Quicksand";
+	color: #000000;
+	justify-content: space-around;
+}
+.aqi-circle, .aqi-value{
+	position: absolute;
+}
+.aqi-value{
+	margin-top: 2.5%;
+	margin-left: 2.5%;
+	z-index: 10;
+	font-size: xx-large;
+}
+.aqi-classification{
+	display: flex;
+	flex-direction: column;
+}
+.aqi-desc{
+	display: flex;
+	flex-direction: column;
+}
+.aqi-hc{
+	margin-left: 30%;
+	margin-top: 4%;
+	font-size: x-large;
+}
+/* Sunrise Sunset Card */
+.sun-card{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+	background-color: #EDF2F4;
+	min-height: 15vh;
+	min-width: 40vw;
+	font-family: "Quicksand";
+	color: #000000;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+.sunrise-value{
+	font-size: xx-large;
+}
+.sunset-value{
+	font-size: xx-large;
+}
+.sunrise-desc{
+	display: flex;
+	flex-direction: row;
+}
+.sunrise-symbol{
+	margin: 3%;
+}
+.sunset-desc{
+	display: flex;
+	flex-direction: row;
+}
+.sunset-symbol{
+	margin: 3%;
+}
+
+/* weather_code conversion */
 .capitalize {
     text-transform: capitalize;
 }
-
 
 /*Media Queries*/
 /*Ultra Wide*/
