@@ -232,7 +232,7 @@ nav{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin-left: 20%;
+	margin-left: 10%;
 }
 .sunset-value{
 	font-size: xx-large;
@@ -240,7 +240,7 @@ nav{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin-left: 20%;
+	margin-left: 10%;
 }
 .sunrise-desc{
 	display: flex;
