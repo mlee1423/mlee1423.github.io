@@ -100,7 +100,7 @@ nav{
 
 /*Main HTML*/
 /* Weather App */
-.card-container{
+.weather-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
