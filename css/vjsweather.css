@@ -208,6 +208,10 @@ nav{
 	display: flex;
 	flex-direction: column;
 }
+.aqi-detailed p{
+	max-width: 60%;
+	margin-left: 30%;
+}
 .aqi-hc{
 	margin-left: 30%;
 	margin-top: 4%;
