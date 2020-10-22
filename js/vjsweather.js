@@ -7,7 +7,7 @@ window.addEventListener('load', ()=> {
     let temperatureDescription = document.querySelector('.temperature-description');
     let temperatureDegree = document.querySelector('.temperature-degree');
     let locationTimezone = document.querySelector('.location-timezone');
-    let degreeSection = document.querySelector('.degree-section');
+    //let degreeSection = document.querySelector('.degree-section');
     const temperatureSpan = document.querySelector('.degree-section');
     
     let feelsLikeValue = document.querySelector('.feelslike-value');
@@ -16,7 +16,7 @@ window.addEventListener('load', ()=> {
 
     let aqiValue = document.querySelector('.aqi-value');
     let aqiDescription = document.querySelector('.aqi-hc');
-    let aqiDetailed = document.querySelector('aqi-detailed');
+    //let aqiDetailed = document.querySelector('aqi-detailed');
 
     let sunriseTime = document.querySelector('.sunrise-value');
     let sunsetTime = document.querySelector('.sunset-value');
@@ -59,6 +59,7 @@ window.addEventListener('load', ()=> {
                 weathercode = data.weather_code.value;
                 summary = weathercode.replace(/_/g, ' ');
                 icon = weathercode.toUpperCase();
+                //aqidetail = "The air quality is generally acceptable for most individuals. However, sensitive groups may experience minor to moderate symptoms from long-term exposure.";
 
                 //Set DOM Elements from the API
                 temperatureDegree.textContent = Math.floor(temp) + "° F";
@@ -70,7 +71,7 @@ window.addEventListener('load', ()=> {
 
                 aqiValue.textContent = Math.floor(aqi);
                 aqiDescription.textContent = aqidesc;
-                aqiDetailed.textContent = "The air quality is generally acceptable for most individuals. However, sensitive groups may experience minor to moderate symptoms from long-term exposure.";
+                //aqiDetailed.textContent = aqidetail;
 
                 //YYYY-MM-DD HH:MM:SS.XXX-XXXX
                 //SUNRISE
