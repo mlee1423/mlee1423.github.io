@@ -100,7 +100,7 @@ nav{
 
 /*Main HTML*/
 /* Weather App */
-.weather-container{
+.card-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -124,7 +124,8 @@ nav{
 	min-height: 34vh;
 	font-family: "Quicksand";
 	color: #000000;
-	justify-content: space-around;
+	margin: 1%;
+
 }
 .weather-icon-desc{
 	display: flex;
@@ -180,6 +181,9 @@ nav{
 	margin-bottom: 3%;
 }
 /* AQI Card */
+.hc-values{
+	margin: 1%;
+}
 .aqi-card{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
