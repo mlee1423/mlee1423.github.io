@@ -16,8 +16,7 @@ window.addEventListener('load', ()=> {
 
     let aqiValue = document.querySelector('.aqi-value');
     let aqiDescription = document.querySelector('.aqi-hc');
-    let aqiDetailed = document.querySelector('aqi-detailed');
-        aqiDetailed.textContent = "The air quality is generally acceptable for most individuals. However, sensitive groups may experience minor to moderate symptoms from long-term exposure.";
+    //let aqiDetailed = document.querySelector('aqi-detailed');
 
     let sunriseTime = document.querySelector('.sunrise-value');
     let sunsetTime = document.querySelector('.sunset-value');
