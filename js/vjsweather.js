@@ -89,7 +89,7 @@ window.addEventListener('load', ()=> {
                     finalsunrisehour = sunrisehours;
                 }
                 sunriseconversion = finalsunrisehour+":"+sunrisetime.charAt(14)+sunrisetime.charAt(15)+sunhour;
-                sunriseTime.textContent = sunriseconversion;
+                sunriseTime.textContent = "sunrise at " + sunriseconversion;
                 //SUNSET
                 sunsethours = sunsettime.charAt(11)+sunsettime.charAt(12);
                 if(sunsethours >= "00" && sunsethours <= "18"){
@@ -105,7 +105,7 @@ window.addEventListener('load', ()=> {
                     finalsunsethour = sunsethours;
                 }
                 sunsetconversion = finalsunsethour+":"+sunsettime.charAt(14)+sunsettime.charAt(15)+sunsethour;
-                sunsetTime.textContent = sunsetconversion;
+                sunsetTime.textContent = "sunset at " + sunsetconversion;
 
                 //Formula for Celsius
                 let celsius = (temp - 32) * (5 / 9);
